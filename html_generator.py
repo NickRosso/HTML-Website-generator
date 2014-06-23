@@ -14,7 +14,7 @@ def get_info(parent=None, message=''):
 def create_layout(title, h2,h1,h3, p, current_time):
 	with open ('css.css', 'w') as css:
 		css.write("body {margin: 0;padding: 0;font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;color: #444;}")
-		css.write("header {font-size: large; color: #E0E0E0; background-color: #2B2B2B;height: 35px;width: 100%;opacity: .9;margin-bottom: 10px; text-align: left}")
+		css.write("header {font-size: large; color: #E0E0E0; background-color: #2B2B2B;height: 50px;width: 100%;opacity: .9; text-align: left}")
 		css.write("div.jumbo {padding: 10px 0 30px 0;background-color: #eeeeee;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}")
 		css.write("h2 {font-size: 5em;large;margin-top: 40px;text-align: center;letter-spacing: -2px; text-align: center})")
 		css.write(".container {width: 940px;margin: 0 auto;}")

@@ -19,12 +19,13 @@ def create_layout(title, h2,h1,h3, p):
 		css.write(".container {width: 940px;margin: 0 auto;}")
 		css.write("h3 {font-size: 1.7em;font-weight: 100;margin-top: 30px;text-align: center;letter-spacing: -1px;color: #999;}")
 		css.write("header h1.logo {margin: 0;font-size: 1.7em;color: #fff;text-transform: uppercase;float: left;}")
-		css.write(".paragraph {background-color: #AAB6BF;height 80%; width 100%;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}")
+		css.write(".paragraph {font-size: 1.5em;background-color: #AAB6BF;height 100%; width 80%;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;text-align: left}")
 		css.close()
 
 	with open ('index.html', 'w') as html:
 		html.write("<!DOCTYPE html><html><head></head><link rel=\"stylesheet\" type =\"text/css\" href=\"css.css\"><title>%s</title><body><header><div class=\"container\"><h1 class=\"logo\">%s</h1></div></header></h1><div class=\"container\"><div class=\"jumbo\"><h2>%s</h2><h3>%s</h3></div></div><p class=\"paragraph\">%s</p></body></html>" % (title, h1,h2,h3,p))
 		html.close()
+		
 title = get_info(message = 'Type in Webpage Title: ')
 h1 = get_info(message = 'Type in Company Title')
 h2 = get_info(message = 'Type in Header Name')
